@@ -1,2 +1,25 @@
 # fxlogger
-fxevent zerolog adoptor for go-uber/fx 1.14.0
+
+[![MIT License](https://img.shields.io/github/license/ipfans/fxlogger)](https://github.com/ipfans/fxlogger/blob/main/LICENSE)
+[![GoDoc](http://godoc.org/github.com/ipfans/fxlogger?status.svg)](http://godoc.org/github.com/ipfans/fxlogger)
+[![Go Report Card](https://goreportcard.com/badge/github.com/ipfans/fxlogger)](https://goreportcard.com/report/github.com/ipfans/fxlogger)
+[![Issues](https://img.shields.io/github/issues/ipfans/fxlogger)](https://github.com/ipfans/fxlogger/issues)
+
+fxevent zerolog adoptor for go-uber/fx 1.14.0+.
+
+# Installation
+
+```
+go get github.com/ipfans/fxlogger@latest
+```
+
+## Usage
+
+```go
+
+fx.New(fx.WithLogger(fxlogger.Default()))
+
+// or
+
+fx.New(fx.WithLogger(fxlogger.WithZerolog(zerolog.New(os.Stdout))))
+```
