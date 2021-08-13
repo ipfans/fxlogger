@@ -7,7 +7,7 @@
 
 fxevent zerolog adoptor for go-uber/fx 1.14.0+.
 
-# Installation
+## Installation
 
 ```
 go get github.com/ipfans/fxlogger@latest
