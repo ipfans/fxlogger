@@ -103,7 +103,7 @@ func TestFxlogger(t *testing.T) {
 		{
 			name:        "Invoked/Success",
 			give:        &fxevent.Invoked{FunctionName: "bytes.NewBuffer()"},
-			wantMessage: "{\"level\":\"error\",\"stack\":\"\",\"function\":\"bytes.NewBuffer()\",\"message\":\"invoked\"}\n",
+			wantMessage: "{\"level\":\"info\",\"function\":\"bytes.NewBuffer()\",\"message\":\"invoked\"}\n",
 		},
 		{
 			name:        "Invoked/Error",
