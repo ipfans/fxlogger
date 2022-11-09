@@ -25,3 +25,9 @@ fx.New(fx.WithLogger(fxlogger.Default()))
 
 fx.New(fx.WithLogger(fxlogger.WithZerolog(zerolog.New(os.Stdout))))
 ```
+
+## Contributors
+
+<a href="https://github.com/ipfans/fxlogger/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ipfans/fxlogger" />
+</a>
