@@ -68,11 +68,10 @@ func (l *logger) LogEvent(event fxevent.Event) {
 
 	case *fxevent.Invoked:
 		if e.Err != nil {
-			msg = "invoke failed"
 			l.Logger.Error().Err(e.Err).Str("stack", e.Trace).
-				Str("function", e.FunctionName).Msg(msg)
+				Str("function", e.FunctionName).Msg("invoke failed")
 		} else {
-			l.Logger.Info().Str("function", e.FunctionName).Msg(msg)
+			l.Logger.Info().Str("function", e.FunctionName).Msg("invoked")
 		}
 	case *fxevent.Stopping:
 		l.Logger.Info().Str("signal", strings.ToUpper(e.Signal.String())).Msg("received signal")
